@@ -1,0 +1,55 @@
+.header {
+  min-hight: 100px;
+  color: whitesmoke;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-image: url('../Images/backgroundHeader.jpg');
+  backgroundsize: cover;
+}
+.ContainerH{
+  z-index: 100;
+  position: static;
+}
+
+.container1 {
+  min-height: 75px;
+  width: 550px;
+  Background-color: #282c34;
+  Color: whitesmoke;
+  font-size: 24px;
+  padding-top : 10px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 15px;
+  }
+
+.selectie {
+  width: 130px;
+  border-color: whitesmoke;
+  font-size: 17px;
+}
+
+.footer {
+  background-color: #282c34;
+  color: whitesmoke;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.mapMargin {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.PaddenStoelen{
+  background-image: url('../Images/backgroundHeader.jpg');
+  backgroundsize: cover;
+}
+
