@@ -1,47 +1,50 @@
-# Getting Started with Create React App
+# Paddestoelen
+Op een leafletkaart worden de paddenstoelen getoond op een grasveld in Zeist
+Als je op de marker klikt krijg je informatie over de paddenstoel
+Je kunt een deel selectie maken op basis van de kleur en de spots. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dit is een challenge van Spronq.
 
-## Available Scripts
+Deze leverde een api met 3 arrays:
+Kleur 
+Spots
+De paddenstoelen
 
-In the project directory, you can run:
 
-### `npm start`
+bij init worden middels 2 functies en een useEffect
+de arrays beschikbaar gemaakt voor de page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+De icon wordt geladen.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+De handlers worden gedefinieerd voor
 
-### `npm test`
+Marker 
+Colorselect en Clear
+Spots Select en Clear
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+OP basis van een deelverzameling (alles of alleen een kleur of spot
+of een deelverzameling van kleur plus spot) wordt de selectlist getoond.
 
-### `npm run build`
+Zowel de Alle Kleuren als de Reset maakt de slecect weer naar oorspronkelijke staat.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+De web pagina heeft een Header
+Dan een grid met 2 kolommen links de twee selectboxes
+en rechts de kaart. De kaart wordt zo getoond dat alle paddenstoelen zichtbaar zijn. Er kan ingezoomd en uitgezoomd worden. 
+Een footer bij wijze van
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Er is gebruik gemaakt voor de opmaak van zowel Bootstrap als CSS.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+De index.tsx renderd de app.
+De App.tsx bevat de app
+De Header.tsx bevat de header
+De Footer.tsx bevat de footer
 
-### `npm run eject`
+De Api.ts bevat de geleverde arrays en werkt als een server door de delay in de 
+default Promise. (1500 ms)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+App.css bevat de css voor de app.
+index.css bevat de meegeleverde css van de index.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# Pads
+Er wordt van een foto (courtesy M. Crowe)
+gebruikt genaakt voor de header
+en een png voor de marker.
